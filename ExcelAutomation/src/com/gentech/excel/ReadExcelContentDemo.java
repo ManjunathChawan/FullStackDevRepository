@@ -23,7 +23,7 @@ public class ReadExcelContentDemo {
 		Cell cell=null;
 		try
 		{
-			fin=new FileInputStream("D:\\EXCEL\\Test.xlsx");
+			fin=new FileInputStream("E:\\Gentech\\Book1.xlsx");
 			wb=new XSSFWorkbook(fin);
 			//Sheet Object
 			sh=wb.getSheet("Sheet1");
@@ -56,7 +56,7 @@ public class ReadExcelContentDemo {
 				System.out.println();
 			}
 			
-		}catch (Exception e) 
+		}catch (Exception e)
 		{
 			e.printStackTrace();
 		}

@@ -13,7 +13,7 @@ public class WriteExcelContentDemo {
 		writeContent();
 
 	}
-	
+
 	private static void writeContent()
 	{
 		FileOutputStream fout=null;
@@ -37,10 +37,10 @@ public class WriteExcelContentDemo {
 			cell.setCellValue("admin");
 			cell=row.createCell(1);
 			cell.setCellValue("Welcome12345");
-			
-			fout=new FileOutputStream("D:\\EXCEL\\Credentails.xlsx");
+
+			fout=new FileOutputStream("E:\\Gentech\\Credentails.xlsx");
 			wb.write(fout);
-		}catch (Exception e) 
+		}catch (Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -50,7 +50,7 @@ public class WriteExcelContentDemo {
 			{
 				fout.close();
 				wb.close();
-			}catch (Exception e) 
+			}catch (Exception e)
 			{
 				e.printStackTrace();
 			}
